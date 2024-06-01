@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./Board.css";
 
 import Overlay from "../Overlay/Overlay";
-import NewGame from "../NewGame/NewGame";
 import Tile from "../Tile/Tile";
 import Winner from "../Winner/Winner";
 
@@ -99,9 +98,8 @@ const Boards = () => {
   };
 
   const handleHelpMe = () => {
-    // Implement logic to automate one step towards solving the puzzle
-    // For simplicity, let's just perform a random valid move
-    if (!timerRunning || gamePaused) return; // Help me only works when the game is running
+    
+    if (!timerRunning || gamePaused) return; 
     const i16 = numbers.find((n) => n.value === 16).index;
     const validMoves = [];
     if (!(i16 % 4 === 3)) validMoves.push(numbers.find((n) => n.index === i16 + 1));
