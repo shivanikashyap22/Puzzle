@@ -25,4 +25,13 @@
     justify-content: center;
     gap:20px;
   }
+  .btn{
+    color:white;
+    font-size:18px;
+    border:none;
+    background-color: black;
+    padding:10px;
+    border-radius:10px;
+
+  }
   

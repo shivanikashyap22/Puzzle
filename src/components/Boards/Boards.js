@@ -125,14 +125,14 @@ const Boards = () => {
         <h1 className="puzzle">Fifteen Puzzle Game</h1>
         <h1 className="puzzle">Timer: {formatTime(seconds)}</h1>
         <div className="button-wrapper">
-          <button onClick={toggleTimer}>
+          <button onClick={toggleTimer} className="btn">
             {timerRunning ? "Stop" : "Start"}
           </button>
-          <button onClick={togglePause}>
+          <button onClick={togglePause} className="btn">
             {gamePaused ? "Resume" : "Pause"}
           </button>
-          <button onClick={reset}>Reset</button>
-          <button onClick={handleHelpMe}>Help me</button>
+          <button onClick={reset} className="btn">Reset</button>
+          <button onClick={handleHelpMe} className="btn">Help me</button>
         </div>
       </div>
       <div className="game">

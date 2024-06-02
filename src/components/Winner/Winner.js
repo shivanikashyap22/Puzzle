@@ -1,5 +1,4 @@
 
-import NewGame from '../NewGame/NewGame'
 import './Winner.css'
 
 const Winner = ({numbers,reset}) => {
@@ -9,7 +8,6 @@ const Winner = ({numbers,reset}) => {
     return <div 
         className="winner">
         <p>You win!</p>
-        <NewGame reset={reset} />
     </div>
 }
 

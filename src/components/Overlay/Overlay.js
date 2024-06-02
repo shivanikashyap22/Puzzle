@@ -1,4 +1,3 @@
-import './Overlay.css'
 
 const Overlay = ({size}) =>
     new Array(size)
